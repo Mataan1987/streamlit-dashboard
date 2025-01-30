@@ -7,4 +7,4 @@ beautifulsoup4
 transformers  
 schedule 
 Flask 
-openai
+openai>=1.0.0 
