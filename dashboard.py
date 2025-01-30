@@ -2,6 +2,7 @@ import pandas as pd
 
 # Function to research top AI automation agencies  
 def research_agencies():  
+    print("Researching agencies...")  
     # Placeholder for agency data  
     agencies = [  
         {"name": "Agency A", "specialties": "NLP, ML", "rating": 4.8, "reviews": "Excellent service", "pricing": "$100/hr"},  
@@ -23,10 +24,12 @@ def research_agencies():
     
     # Create a DataFrame for easy comparison  
     df_agencies = pd.DataFrame(agencies)  
+    print("Agencies researched successfully.")  
     return df_agencies  
 
 # Function to analyze agency fit based on requirements  
 def analyze_agency_fit(requirements):  
+    print("Analyzing agency fit...")  
     # Placeholder for agency fit analysis  
     suitable_agencies = []  
     for agency in research_agencies().to_dict(orient='records'):  
@@ -34,10 +37,12 @@ def analyze_agency_fit(requirements):
         if "NLP" in agency['specialties'] and requirements['lead_generation']:  
             suitable_agencies.append(agency)  
     
+    print("Agency fit analysis completed.")  
     return suitable_agencies  
 
 # Function to generate hiring documents  
 def generate_hiring_documents():  
+    print("Generating hiring documents...")  
     inquiry_email = """Subject: Inquiry About Your AI Automation Services  
 
 Dear [Agency Name],  
@@ -58,38 +63,49 @@ Best regards,
     contract_template = "Contract Template: [Details]"  
     sla_template = "SLA Template: [Details]"  
     
+    print("Hiring documents generated successfully.")  
     return inquiry_email, contract_template, sla_template  
 
 # Function to monitor agency performance  
 def monitor_performance(sla):  
+    print("Monitoring agency performance...")  
     # Placeholder for performance checklist  
     checklist = ["Timeliness", "Quality of Work", "Communication"]  
+    print("Performance monitoring completed.")  
     return checklist  
 
 # Function to automate the hiring process  
 def automate_hiring_process():  
+    print("Automating the hiring process...")  
     # Placeholder for automation setup (e.g., using Zapier)  
     automation_workflow = "Set up Zapier workflows for inquiries and logging."  
+    print("Hiring process automation setup completed.")  
     return automation_workflow  
 
 # Function to expand the agency network  
 def expand_agency_network():  
+    print("Expanding the agency network...")  
     # Placeholder for ongoing research  
     new_agencies = ["Agency P", "Agency Q"]  # Example new agencies  
+    print("Agency network expansion completed.")  
     return new_agencies  
 
 # Function to provide weekly updates  
 def provide_weekly_updates():  
+    print("Providing weekly updates...")  
     updates = {  
         "new_agencies_added": ["Agency P", "Agency Q"],  
         "hiring_progress": "Inquiries sent to 5 agencies.",  
         "actionable_insights": "Focus on agencies with strong client reviews."  
     }  
+    print("Weekly updates provided.")  
     return updates  
 
 # Main function to execute tasks  
 def main():  
-    print("Researching AI Automation Agencies...")  
+    print("Starting the AI Agency Dashboard...")  
+    
+    print("\nResearching AI Automation Agencies...")  
     agencies_df = research_agencies()  
     print(agencies_df)  
 
