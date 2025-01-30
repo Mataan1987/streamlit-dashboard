@@ -31,7 +31,7 @@ if st.button("Get Response"):
 
 st.header("Agency Tools")  
 st.write("Manage CRM, analytics, and marketing tools here.")  
-tools = st.selectbox("Select a tool to manage:", ["CRM", "Analytics", "Marketing"])  
+tools = st.selectbox("Select a tool to manage:", ["CRM", "Analytics", "Marketing","Legal Assistant","Project Manager","Research Assistant","Health & Wellness Coach","Travel Planner","Learning & Development Coach","Event Manager","Inventory Manager","Risk Management Advisor"," Innovation Strategist"])  
 st.write(f"You selected: {tools}")  
 
 st.header("Notifications")  
@@ -42,8 +42,7 @@ for notification in notifications:
 
 st.header("Reports")  
 st.write("Visualize key metrics here.")  
-st.header("New Agents")  
-st.write("Legal Assistant, Project Manager, Research Assistant, Health & Wellness Coach, Travel Planner, Learning & Development Coach, Event Manager, Inventory Manager, Risk Management Advisor, Innovation Strategist.")
+
 import pandas as pd  
 
 # Sample data for visualization  
