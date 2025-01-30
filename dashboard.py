@@ -17,10 +17,14 @@ user_input = st.text_input("What would you like to ask the AI?")
 if st.button("Get Response"):  
     if user_input:  
         try:  
-            response = openai.Completion.create(  
-                engine="text-davinci-003",  
-                prompt=user_input,  
-                max_tokens=50  
+           response = openai.ChatCompletion.create(  
+    model="gpt-4",  
+    messages=[  
+        {"role": "system", "content": "You are a helpful assistant."},  
+        {"role": "user", "content": "Hello, world!"}  
+    ],  
+    max_tokens=100  
+)  
             )  
             st.write("AI Response:")  
             st.write(response.choices[0].text.strip())  
