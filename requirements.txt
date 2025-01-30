@@ -1,0 +1,9 @@
+pandas  
+numpy  
+scikit-learn  
+requests  
+flask  
+beautifulsoup4  
+transformers  
+schedule 
+Flask 
