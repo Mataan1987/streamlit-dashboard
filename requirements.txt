@@ -1,11 +1,5 @@
+openai  
 pandas  
-numpy  
-scikit-learn  
-requests  
-flask  
-beautifulsoup4  
-transformers  
-schedule 
-Flask 
-openai==0.28
+streamlit  
+matplotlib  
 python-dotenv
