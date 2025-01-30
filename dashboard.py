@@ -1,9 +1,18 @@
-import streamlit as st  
+import os  
 import openai  
 import pandas as pd  
+import streamlit as st  
+from dotenv import load_dotenv  
 
-# Set your OpenAI API key  
-openai.api_key = "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"  # Replace with your actual API key  
+# Load environment variables from a .env file  
+load_dotenv()  
+
+# Set your OpenAI API key from the environment variable  
+openai.api_key = os.getenv("OPENAI_API_KEY")  
+
+# Check if the API key is set  
+if not openai.api_key:  
+    st.error("OpenAI API key is not set. Please configure it as an environment variable.")  
 
 # Title  
 st.title("Centralized Agency Dashboard")  
