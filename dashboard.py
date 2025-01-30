@@ -18,7 +18,7 @@ user_input = st.text_input("What would you like to ask the AI?")
 if st.button("Get Response"):  
     if user_input:  
         try:  
-            response = openai.chat_completions.create(  
+            response = openai.ChatCompletion.create(  
                 model="gpt-4",  
                 messages=[  
                     {"role": "system", "content": "You are a helpful assistant."},  
