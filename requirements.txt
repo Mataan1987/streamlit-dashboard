@@ -8,3 +8,4 @@ transformers
 schedule 
 Flask 
 openai==0.28
+python-dotenv
