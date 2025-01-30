@@ -42,6 +42,8 @@ for notification in notifications:
 
 st.header("Reports")  
 st.write("Visualize key metrics here.")  
+st.header("New Agents")  
+st.write("Legal Assistant, Project Manager, Research Assistant, Health & Wellness Coach, Travel Planner, Learning & Development Coach, Event Manager, Inventory Manager, Risk Management Advisor, Innovation Strategist.")
 import pandas as pd  
 
 # Sample data for visualization  
